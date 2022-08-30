@@ -1,0 +1,128 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    background-color: #F3F5FC;
+}
+
+header {
+    min-width: 940px;
+    width: 0 auto;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    padding: 30px;
+}
+
+main {
+    min-width: 940px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.input {
+    height: 450px;
+    color: #0A3871;
+    text.transform: lowercase;
+    border-radius: 20px;
+    width: 94%;
+    font-size: 32px;
+}
+
+#campoDeTexto {
+    border: 2px;
+}
+
+#campoDeTexto::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+}
+
+#campoDeResposta {
+    border: 2px solid #0A3871;
+    background-color: #FFFFFF;
+    background-image: url("imagens/background.png");
+    background-repeat: no-repeat;
+    background-position: 200px;
+    background-size: 400px;
+}
+
+#campoDeResposta:hover {
+    background-image: none;
+}
+
+.aviso {
+    font-size: 20px;
+    color: #67808E;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.botoes {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #0A3871;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0px;
+    margin: 20px 15px;
+    width: 45%;
+    border: 2px solid #0A3871;
+    border-radius: 20px;
+    font-size: 32px;
+}
+
+#criptografar, #apagar {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+footer {
+    text-align: center;
+    background-color: #0A3871;
+    min-width: 940px;
+    width: 0 auto;
+}
+
+footer * {
+    background-color: #0A3871;
+}
+
+.contato {
+    padding: 100px 0 100px;
+}
+
+footer div {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+footer img {
+    display: inline-block;
+    max-width: 80px;
+    height: auto;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
