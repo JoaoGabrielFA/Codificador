@@ -5,32 +5,35 @@
     background-color: #F3F5FC;
 }
 
-header {
-    min-width: 940px;
-    width: 0 auto;
+@font-face {
+    font-family: "hacker";
+    src: url("Cracked Code.ttf")
 }
 
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
-    padding: 30px;
+header {
+    width: 100%;
+    margin: 4vw 0 4vw;
+}
+
+header p {
+    font-family: "hacker";
+    font-size: 9vw;
+    color: #0A3871;
+    text-align: center;
 }
 
 main {
-    min-width: 940px;
+    width: 90%;
     text-align: center;
-    padding-bottom: 50px;
 }
 
 .input {
-    height: 450px;
+    width: 100%;
+    height: 25%;
+    font-size: 4vw;
     color: #0A3871;
     text.transform: lowercase;
-    border-radius: 20px;
-    width: 94%;
-    font-size: 32px;
+    border-radius: 3vw;
 }
 
 #campoDeTexto {
@@ -39,7 +42,7 @@ main {
 
 #campoDeTexto::placeholder {
     color: #0A3871;
-    font-size: 32px;
+    font-size: 4vw;
 }
 
 #campoDeResposta {
@@ -56,29 +59,28 @@ main {
 }
 
 .aviso {
-    font-size: 20px;
+    font-size: 2vw;
     color: #67808E;
     font-weight: bold;
     text-align: left;
-    padding-top: 5px;
-    padding-left: 30px;
+    margin: 2vw 0 2vw;
 }
 
 .botoes {
+    width: 49.4%;
     display: inline-block;
     background-color: #FFFFFF;
     color: #0A3871;
+    font-size: 3vw;
     text-align: center;
     font-weight: bold;
-    padding: 20px 0px;
-    margin: 20px 15px;
-    width: 45%;
     border: 2px solid #0A3871;
-    border-radius: 20px;
-    font-size: 32px;
+    border-radius: 3vw;
+    padding: 3vw 0;
+    margin: 3vw 0 3vw;
 }
 
-#criptografar, #apagar {
+#criptografar, #copiar {
     background-color: #0A3871;
     color: #FFFFFF;
 }
@@ -86,8 +88,7 @@ main {
 footer {
     text-align: center;
     background-color: #0A3871;
-    min-width: 940px;
-    width: 0 auto;
+    width: 100%;
 }
 
 footer * {
@@ -95,34 +96,86 @@ footer * {
 }
 
 .contato {
-    padding: 100px 0 100px;
+    padding: 1.5vh 0 1.5vh;
 }
 
 footer div {
     display: inline-block;
-    padding: 0 10px 0 10px;
+    padding: 0 1vh 0 1vh;
 }
 
 footer p {
     color: #FFFFFF;
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 1vh;
+    margin-bottom: 1vh;
 }
 
 a {
     color: #FFFFFF;
     text-decoration: none;
-    padding-top: 10px;
+    padding-top: 1vh;
 }
 
 footer img {
     display: inline-block;
-    max-width: 80px;
+    width: 5vh;
     height: auto;
-    padding: 10px;
+    padding: 1vh;
 }
 
 label {
     display: block;
-    font-size: 20px;
+    font-size: 1vh;
+}
+
+@media (orientation: landscape) {
+    header {
+        margin: 4vh 0 4vh;
+    }
+
+    header p {
+        font-size: 9vh;
+    }
+    
+    main section {
+        width: 44%;
+        height: 70%;
+        display: inline-block;
+    }
+
+    .input {
+        font-size: 5vh;
+        border-radius: 3vh;
+    }
+    #campoDeTexto {
+        height: 40vh;
+    }
+    
+    #campoDeTexto::placeholder {
+        font-size: 5vh;
+    }
+    
+    #campoDeResposta{
+        height: 40vh;
+    }
+
+    .aviso {
+        font-size: 2vh;
+        margin: 2vh 0 2vh;
+    }
+    
+    .botoes {
+        font-size: 3vh;
+        border-radius: 3vh;
+        padding: 3vh 0;
+        margin: 3vh 0 3vh;
+    }
+
+    footer img {
+        width: 5vw;
+    }
+    
+    footer p, label {
+        font-size: 2vw;
+    }
 }
