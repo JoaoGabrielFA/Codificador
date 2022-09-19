@@ -34,6 +34,7 @@ main {
     color: #0A3871;
     text.transform: lowercase;
     border-radius: 3vw;
+    resize: none;
 }
 
 #campoDeTexto {
@@ -46,16 +47,16 @@ main {
 }
 
 #campoDeResposta {
-    border: 2px solid #0A3871;
+    border: 2px;
     background-color: #FFFFFF;
-    background-image: url("imagens/background.png");
-    background-repeat: no-repeat;
-    background-position: 200px;
-    background-size: 400px;
 }
 
-#campoDeResposta:hover {
-    background-image: none;
+#campoDeResposta::placeholder{
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    color: #0A3871;
+    line-height: 40vw;
 }
 
 .aviso {
@@ -147,16 +148,16 @@ label {
         font-size: 5vh;
         border-radius: 3vh;
     }
-    #campoDeTexto {
+    #campoDeTexto, #campoDeResposta {
         height: 40vh;
     }
     
-    #campoDeTexto::placeholder {
+    #campoDeTexto::placeholder, #campoDeResposta::placeholder {
         font-size: 5vh;
     }
     
-    #campoDeResposta{
-        height: 40vh;
+    #campoDeResposta::placeholder {
+        line-height: 35vh;
     }
 
     .aviso {
@@ -177,5 +178,29 @@ label {
     
     footer p, label {
         font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .input, #campoDeTexto::placeholder, #campoDeResposta::placeholder {
+        font-size: 3vh;
+    }
+    footer {
+        max-height: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0
+    }
+    
+    .contato {
+        padding: 1.5vw 0 1.5vw;
+    }
+    
+    footer img {
+        width: 3vw;
+    }
+    
+    footer p, label {
+        font-size: 1vw;
     }
 }
