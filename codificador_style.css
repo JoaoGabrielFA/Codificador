@@ -181,10 +181,11 @@ label {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (orientation:landscape){
     .input, #campoDeTexto::placeholder, #campoDeResposta::placeholder {
         font-size: 3vh;
     }
+    
     footer {
         max-height: 100%;
         position: fixed;
