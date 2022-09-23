@@ -30,7 +30,6 @@ main {
 .input {
     width: 100%;
     height: 25%;
-    max-height: 25%;
     font-size: 4vw;
     color: #0A3871;
     text.transform: lowercase;
@@ -131,10 +130,8 @@ label {
 }
 
 @media (orientation: portrait) {
-    footer{
-        position: fixed;
-        bottom: 0;
-        left: 0
+    main {
+        padding-bottom: 4vh;
     }
 }
 
