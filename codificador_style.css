@@ -129,12 +129,6 @@ label {
     font-size: 1vh;
 }
 
-@media (orientation: portrait) {
-    main {
-        padding-bottom: 4vh;
-    }
-}
-
 @media (orientation: landscape) {
     header {
         margin: 4vh 0 4vh;
@@ -208,5 +202,11 @@ label {
     
     footer p, label {
         font-size: 1vw;
+    }
+}
+
+@media (orientation: portrait) {
+    main {
+        padding-bottom: 4vh;
     }
 }
