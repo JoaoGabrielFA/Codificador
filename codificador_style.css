@@ -208,6 +208,12 @@ label {
 
 @media (orientation: portrait) {
     main {
-        padding-bottom: 4vh;
+        padding-bottom: 4.2vh;
     }
+    
+    footer p, label{
+        font-size: 1.1vw;
+    }
+    
+    
 }
