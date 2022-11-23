@@ -57,6 +57,6 @@ function btn_copiar() {
 }
 
 function btn_apagar() {
-    input_texto.value = " ";
-    resposta.value = " ";
+    input_texto.value = "";
+    resposta.value = "";
 }
